@@ -1,6 +1,6 @@
 # Redux Toolkit Projesi
 
-Standart Redux göre daha kullanışlı ve daha az zahmetli bir Redux versiyonudur. Standart Reduxta kurmamız gereken paketler Redux Toolkit ile hazır bir şekilde gelmektedir.Ayrıca actionlarımızı ve state üzerinde yaptığımız değişiklikleri slice fonksiyonu altında yapacaz. Bu sayede actionlarımızı ve statelerimizi tek bir yerden yönetebileceğiz ve state'i doğrudan manipüle edebileceğiz.Standart versiyonda doğrudan state'mizi manipüle edemiyorduk.
+Standart Redux göre daha kullanışlı ve yazılması daha kolay bir Redux versiyonudur. Standart Reduxta kurmamız gereken paketler Redux Toolkit ile hazır bir şekilde gelmektedir.Ayrıca actionlarımızı ve state üzerinde yaptığımız değişiklikleri slice fonksiyonu altında yapıyoruz. Bu sayede actionlarımızı ve statelerimizi tek bir yerden yönetebileceğiz. Bunun dışında state'i doğrudan manipüle edebiliyoruz. Standart Redux versiyonunda doğrudan state'mizi manipüle edemiyorduk.
 
 ## Redux Toolkit İçin Yüklenmesi Gereken Paketler
 ```
