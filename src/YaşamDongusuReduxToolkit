@@ -1,0 +1,19 @@
+
+BU UYGULAMADAKİ YAŞAM DÖNGÜSÜNÜ AMLADIĞIM KADARIYLA ÖZETLEDİM :
+
+1. App component'i içindeki onchange action'ı çalıştığı zaman useState ile içindeki veriyi title değişkenine aktarıyor
+2.aktarılan title button içerisindeki ile onSave fonksiyonu çalıştığında dispatch aracılığıyla todoSlice.ts dosyasındaki reducerlarımızın
+içindeki add property'sine parametre olarak gidiyor.
+4. add fonksiyonu içerisinde parametre olarak girdiğimiz action burda devreye giriyor. state:action.payload ile yani
+onSave action'ı içerisindeki veriyi(payload) al state'e aktar. 
+5 todoSlice.ts dosyasında en yukarda boş bir Todo arrayi tanımladık bu arrayide initialState'e aktardık. İşte 4. adımda aktarılan
+state bilgisi state.push(newTodo) koduyla initialState içerisine aktarılmış olur. Burdaki state.push komutundaki state
+initialState'e tekabül eder.
+6 daha sonra createSlice fonksiyonuyla oluşturduğumuz todoSlice değişkenine aktardığımız todoSlice içindeki verilerle 
+export edilip index.ts de çağılır
+7 index.ts bizim store'muz yani veri depomuz ve burda configureStore fonksiyonu ile export ettiğimiz slicelar 
+todos property'sine aktarılır ve oda reducer'a reducer da store değişkenine aktarlır
+8 store ise getState metoduyla RootState'e aktarılır ve export edilir.
+9 RootState ise daha sonra app componentinde useAppSelector ile çağırılır ve içindeki store içinde todos verisi alınır 
+ve todos değişkenine aktarılır.
+10 Aktarılan veri bir array oldupu için app component'inde maplenir ve veriler ekrana getirilir.
